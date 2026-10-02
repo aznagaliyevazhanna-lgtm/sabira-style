@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sabira_style — Style is you</title>
+<meta name="description" content="Sabira_style · ТЦ ARS, 29 мкр., Толкын 225/6 · WhatsApp, TikTok, 2GIS · Kaspi и Halyk · Доставка по всему Казахстану">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sabira_style · Style is you">
+<meta property="og:description" content="Заказы в WhatsApp · Доставка по всему Казахстану">
+<meta property="og:url" content="https://aznagaliyevazhanna-lgtm.github.io/sabira-style/links/">
+<meta property="og:image" content="https://aznagaliyevazhanna-lgtm.github.io/sabira-style/images/og.jpg">
+<meta name="theme-color" content="#F6E3E0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23F4DAD6'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23A8676B'%3ESS%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="../images/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6E3E0;
+    --bg-2: #FBEFEC;
+    --blush: #EFC9C4;
+    --plum: #7A3F47;
+    --plum-soft: #8E5A5F;
+    --rose: #B8777A;
+    --rose-light: #D9A9A4;
+    --card: rgba(255, 249, 247, .78);
+    --card-line: rgba(255, 255, 255, .9);
+    --shadow: 0 10px 28px -12px rgba(150, 82, 86, .35), 0 2px 6px rgba(150, 82, 86, .08);
+    --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans: "Montserrat", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    font-family: var(--serif);
+    color: var(--plum);
+    background-color: var(--bg);
+    background-image:
+      radial-gradient(60% 40% at 0% 30%, rgba(239, 190, 186, .55), transparent 70%),
+      radial-gradient(50% 35% at 100% 70%, rgba(239, 190, 186, .5), transparent 70%),
+      radial-gradient(80% 50% at 50% 0%, var(--bg-2), transparent 70%),
+      linear-gradient(160deg, #F9EAE7 0%, #F4DCD8 55%, #F7E6E2 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    font-variant-numeric: lining-nums;
+  }
+
+  /* ---------- декор ---------- */
+  .deco { position: absolute; pointer-events: none; z-index: 0; color: var(--rose-light); }
+  .deco--tl { top: -10px; left: -14px; width: 150px; }
+  .deco--tr { top: 10px; right: -6px; width: 110px; transform: scaleX(-1); }
+  .deco--bl { bottom: -8px; left: -12px; width: 140px; transform: scaleY(-1) rotate(10deg); }
+  .deco--br { bottom: -6px; right: -12px; width: 150px; transform: scale(-1, -1); }
+  .deco--ml { top: 34%; left: -22px; width: 80px; transform: rotate(-20deg); opacity: .75; }
+  .deco--mr { top: 52%; right: -20px; width: 78px; transform: scaleX(-1) rotate(-15deg); opacity: .75; }
+  .spark { position: absolute; width: 14px; color: var(--rose-light); pointer-events: none; z-index: 0; animation: twinkle 4s ease-in-out infinite; }
+  @keyframes twinkle { 0%, 100% { opacity: .35; transform: scale(.85); } 50% { opacity: 1; transform: scale(1); } }
+
+  /* ---------- страница ---------- */
+  .page {
+    position: relative; z-index: 1;
+    max-width: 460px; margin: 0 auto;
+    padding: 40px 18px 120px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+  }
+
+  .logo {
+    width: 196px; height: 196px; border-radius: 50%;
+    filter: drop-shadow(0 14px 22px rgba(160, 90, 92, .22));
+  }
+  .name {
+    margin-top: 18px;
+    font-size: clamp(44px, 13vw, 58px); font-weight: 600; line-height: 1;
+    color: var(--plum); letter-spacing: .005em;
+  }
+  .divider { display: flex; align-items: center; gap: 10px; width: 100%; max-width: 260px; margin: 14px auto 10px; color: var(--rose); }
+  .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--rose-light)); }
+  .divider::after { background: linear-gradient(90deg, var(--rose-light), transparent); }
+  .divider svg { width: 14px; height: 14px; flex: none; }
+  .tagline { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: .55em; padding-left: .55em; color: var(--plum-soft); }
+
+  .address {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 22px; font-size: 19px; font-weight: 500; color: var(--plum);
+    text-decoration: none;
+  }
+  .address svg { width: 20px; height: 20px; flex: none; color: var(--rose); }
+
+  /* ---------- кнопки ---------- */
+  .links { list-style: none; width: 100%; margin-top: 26px; display: grid; gap: 16px; }
+  .card {
+    display: grid; grid-template-columns: auto 1px 1fr auto; align-items: center; gap: 16px;
+    padding: 16px 18px 16px 16px;
+    text-align: left; text-decoration: none; color: inherit;
+    background: var(--card);
+    border: 1px solid var(--card-line);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    -webkit-tap-highlight-color: transparent;
+    opacity: 0; animation: rise .6s ease forwards;
+  }
+  .links li:nth-child(2) .card { animation-delay: .08s; }
+  .links li:nth-child(3) .card { animation-delay: .16s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  .card:hover, .card:focus-visible { transform: translateY(-2px); background: rgba(255, 251, 250, .95); box-shadow: 0 16px 32px -14px rgba(150, 82, 86, .45), 0 2px 6px rgba(150, 82, 86, .1); }
+  .card:active { transform: scale(.985); }
+  .card:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
+
+  .card__icon {
+    width: 62px; height: 62px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: radial-gradient(circle at 35% 30%, #FBEDEA, #F0D6D2);
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, .9), 0 3px 8px -3px rgba(150, 82, 86, .3);
+  }
+  .card__icon svg { width: 36px; height: 36px; }
+  .card__line { width: 1px; height: 44px; background: linear-gradient(transparent, var(--rose-light), transparent); }
+  .card__title { display: block; font-size: 24px; font-weight: 600; letter-spacing: .02em; line-height: 1.1; text-transform: uppercase; }
+  .card__sub { display: block; margin-top: 3px; font-size: 17px; font-weight: 500; color: var(--plum-soft); line-height: 1.25; }
+  .card__arrow { width: 20px; height: 20px; color: var(--plum-soft); transition: transform .25s ease; }
+  .card:hover .card__arrow { transform: translateX(3px); }
+
+  /* ---------- низ ---------- */
+  .divider--wide { max-width: 320px; margin-top: 30px; }
+  .facts { list-style: none; margin-top: 12px; display: grid; gap: 10px; font-size: 18px; font-weight: 500; color: var(--plum-soft); }
+  .facts li { display: flex; align-items: center; justify-content: center; gap: 12px; }
+  .facts svg { width: 26px; height: 22px; flex: none; color: var(--plum-soft); }
+
+  .handle {
+    display: inline-block; margin-top: 24px;
+    padding: 9px 26px; border-radius: 999px;
+    font-size: 20px; font-weight: 600; color: var(--plum); text-decoration: none;
+    background: var(--card); border: 1px solid var(--card-line); box-shadow: var(--shadow);
+    transition: transform .25s ease;
+  }
+  .handle:hover { transform: translateY(-1px); }
+  .heart-end { width: 12px; height: 12px; margin-top: 8px; color: var(--rose); }
+
+  @media (max-width: 380px) {
+    .card { gap: 12px; padding: 14px 14px 14px 12px; }
+    .card__icon { width: 54px; height: 54px; }
+    .card__icon svg { width: 32px; height: 32px; }
+    .card__title { font-size: 21px; }
+    .card__sub { font-size: 15.5px; }
+    .address { font-size: 17px; }
+    .facts { font-size: 16.5px; }
+  }
+  @media (min-width: 700px) {
+    .deco--tl { width: 220px; } .deco--tr { width: 160px; } .deco--bl { width: 200px; } .deco--br { width: 220px; }
+    .deco--ml, .deco--mr { width: 120px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .card { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+
+<!-- иконкалар / иконки -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8B9AE"/><stop offset=".45" stop-color="#C4847F"/><stop offset=".7" stop-color="#E3B3A8"/><stop offset="1" stop-color="#A9696B"/>
+    </linearGradient>
+    <radialGradient id="disc" cx=".4" cy=".35" r=".75">
+      <stop offset="0" stop-color="#FDF3F1"/><stop offset=".7" stop-color="#F6E0DC"/><stop offset="1" stop-color="#EECFCA"/>
+    </radialGradient>
+  </defs>
+  <symbol id="heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.6 4.5c2.2 0 3.6 1.2 5.4 3.1 1.8-1.9 3.2-3.1 5.4-3.1 3.6 0 5.7 3.8 4.2 7.2C19.5 16.4 12 21 12 21z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7.5 7.5 0 0 0-7.5 7.5C4.5 15 12 22 12 22s7.5-7 7.5-12.5A7.5 7.5 0 0 0 12 2zm0 10.3a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6z"/></symbol>
+  <symbol id="chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="spark" viewBox="-10 -10 20 20"><path fill="currentColor" d="M0-10 1.6-1.6 10 0 1.6 1.6 0 10-1.6 1.6-10 0-1.6-1.6z"/></symbol>
+  <symbol id="leaf" viewBox="-6 -18 12 18"><path d="M0 0C-6-5-6-13 0-18 6-13 6-5 0 0zM0 0V-17" fill="none" stroke="currentColor" stroke-width=".9"/></symbol>
+  <symbol id="flower" viewBox="-6 -6 12 12">
+    <g fill="#F2C2C3"><circle cx="0" cy="-3" r="2.6"/><circle cx="2.9" cy="-.9" r="2.6"/><circle cx="1.8" cy="2.5" r="2.6"/><circle cx="-1.8" cy="2.5" r="2.6"/><circle cx="-2.9" cy="-.9" r="2.6"/></g>
+    <circle r="1.3" fill="#C98A86"/>
+  </symbol>
+  <symbol id="sprig" viewBox="0 0 120 150">
+    <path d="M6 148C30 112 52 78 112 8" fill="none" stroke="currentColor" stroke-width="1.1"/>
+    <use href="#leaf" x="18" y="108" width="14" height="22" transform="rotate(-70 25 119)"/>
+    <use href="#leaf" x="30" y="104" width="14" height="22" transform="rotate(35 37 115)"/>
+    <use href="#leaf" x="42" y="76" width="16" height="26" transform="rotate(-62 50 89)"/>
+    <use href="#leaf" x="56" y="74" width="16" height="26" transform="rotate(42 64 87)"/>
+    <use href="#leaf" x="70" y="44" width="16" height="26" transform="rotate(-55 78 57)"/>
+    <use href="#leaf" x="84" y="42" width="16" height="26" transform="rotate(48 92 55)"/>
+    <use href="#leaf" x="98" y="6" width="16" height="26" transform="rotate(40 106 19)"/>
+  </symbol>
+  <symbol id="blossom" viewBox="0 0 160 170">
+    <path d="M0 6C40 30 70 60 100 110M30 26C42 10 52 6 66 2M56 50C76 44 92 30 104 18M74 74C64 96 60 114 62 136M88 92C110 92 128 100 146 116M2 50C20 52 36 58 46 70" fill="none" stroke="#B88A80" stroke-width="1.1" stroke-linecap="round"/>
+    <g>
+      <use href="#flower" x="58" y="-4" width="13" height="13"/><use href="#flower" x="98" y="12" width="12" height="12"/>
+      <use href="#flower" x="22" y="18" width="12" height="12"/><use href="#flower" x="40" y="62" width="13" height="13"/>
+      <use href="#flower" x="56" y="128" width="12" height="12"/><use href="#flower" x="138" y="108" width="14" height="14"/>
+      <use href="#flower" x="94" y="104" width="12" height="12"/><use href="#flower" x="116" y="94" width="10" height="10"/>
+    </g>
+    <g fill="#E9AFAF"><circle cx="16" cy="12" r="2.2"/><circle cx="46" cy="40" r="2"/><circle cx="84" cy="40" r="2.2"/><circle cx="68" cy="102" r="2"/><circle cx="104" cy="88" r="2.4"/><circle cx="28" cy="54" r="2"/><circle cx="64" cy="116" r="1.8"/><circle cx="130" cy="98" r="2"/></g>
+  </symbol>
+</svg>
+
+<!-- декор -->
+<svg class="deco deco--tl" viewBox="0 0 160 170" aria-hidden="true"><use href="#blossom"/></svg>
+<svg class="deco deco--tr" viewBox="0 0 120 150" aria-hidden="true"><use href="#sprig"/></svg>
+<svg class="deco deco--ml" viewBox="0 0 120 150" aria-hidden="true"><use href="#sprig"/></svg>
+<svg class="deco deco--mr" viewBox="0 0 120 150" aria-hidden="true"><use href="#sprig"/></svg>
+<svg class="deco deco--bl" viewBox="0 0 160 170" aria-hidden="true"><use href="#blossom"/></svg>
+<svg class="deco deco--br" viewBox="0 0 160 170" aria-hidden="true"><use href="#blossom"/></svg>
+<svg class="spark" style="top:17%;left:14%" aria-hidden="true"><use href="#spark"/></svg>
+<svg class="spark" style="top:19%;right:12%;animation-delay:1.3s" aria-hidden="true"><use href="#spark"/></svg>
+<svg class="spark" style="top:78%;left:6%;animation-delay:2.1s" aria-hidden="true"><use href="#spark"/></svg>
+<svg class="spark" style="top:74%;right:6%;animation-delay:.7s" aria-hidden="true"><use href="#spark"/></svg>
+
+<main class="page">
+
+  <!-- логотип -->
+  <svg class="logo" viewBox="0 0 200 200" role="img" aria-label="Sabira_style — Style is you">
+    <circle cx="100" cy="100" r="99" fill="url(#disc)"/>
+    <circle cx="100" cy="100" r="98" fill="none" stroke="#fff" stroke-opacity=".8"/>
+    <path d="M46 116A58 58 0 1 1 152 124" fill="none" stroke="url(#rg)" stroke-width=".9"/>
+    <g color="#D3A39D">
+      <use href="#leaf" x="38" y="92" width="9" height="15" transform="rotate(-35 42 100)"/>
+      <use href="#leaf" x="34" y="78" width="9" height="15" transform="rotate(-20 38 86)"/>
+      <use href="#leaf" x="44" y="80" width="9" height="15" transform="rotate(25 48 88)"/>
+      <use href="#leaf" x="38" y="64" width="9" height="15" transform="rotate(-5 42 72)"/>
+      <use href="#leaf" x="46" y="66" width="8" height="13" transform="rotate(35 50 72)"/>
+      <path d="M50 120C42 104 40 86 44 64" fill="none" stroke="#D3A39D" stroke-width=".8"/>
+    </g>
+    <use href="#spark" x="138" y="46" width="7" height="7" color="#D9A9A4"/>
+    <use href="#spark" x="60" y="122" width="5" height="5" color="#D9A9A4"/>
+    <text x="90" y="102" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="72" font-weight="500" fill="url(#rg)">S</text>
+    <text x="113" y="121" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="72" font-weight="500" fill="url(#rg)">S</text>
+    <path d="M68 124C96 130 128 128 150 116" fill="none" stroke="url(#rg)" stroke-width="1"/>
+    <text x="100" y="148" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="17" font-weight="600" letter-spacing="1.4" fill="#6F3E44">Sabira_style</text>
+    <path d="M70 156H95M105 156H130" stroke="#D3A39D" stroke-width=".7"/>
+    <use href="#heart" x="96.5" y="152.5" width="7" height="7" color="#C98A86"/>
+    <text x="101" y="170" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="6" font-weight="500" letter-spacing="2.6" fill="#6F3E44">STYLE IS YOU</text>
+  </svg>
+
+  <h1 class="name">Sabira_style</h1>
+  <div class="divider" aria-hidden="true"><svg><use href="#heart"/></svg></div>
+  <p class="tagline">STYLE IS YOU</p>
+
+  <a class="address" id="address" target="_blank" rel="noopener">
+    <svg aria-hidden="true"><use href="#pin"/></svg>
+    <span>ТЦ ARS, 29 мкр., Толкын 225/6</span>
+  </a>
+
+  <ul class="links">
+    <li>
+      <a class="card" id="whatsapp" target="_blank" rel="noopener">
+        <span class="card__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1.8A10.2 10.2 0 0 0 3.2 17.1L1.8 22.2l5.2-1.4A10.2 10.2 0 1 0 12 1.8z" fill="#25D366" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+            <path fill="#fff" d="M17.3 14.3c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5c.1-.2 0-.3 0-.5l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/>
+          </svg>
+        </span>
+        <span class="card__line"></span>
+        <span><span class="card__title">WhatsApp</span><span class="card__sub">Заказы и связь с менеджером</span></span>
+        <svg class="card__arrow" aria-hidden="true"><use href="#chev"/></svg>
+      </a>
+    </li>
+    <li>
+      <a class="card" id="tiktok" target="_blank" rel="noopener">
+        <span class="card__icon">
+          <svg viewBox="-1 -1 26 26" aria-hidden="true">
+            <defs><path id="tt" d="M12.5 0h3.9c.1 1.5.6 3.1 1.8 4.2 1.1 1.1 2.7 1.6 4.2 1.8v4c-1.4 0-2.9-.3-4.2-1-.6-.3-1.1-.6-1.6-.9v8.7c-.1 1.4-.5 2.8-1.3 3.9-1.3 1.9-3.6 3.2-5.9 3.2-1.4.1-2.9-.3-4.1-1-2-1.2-3.4-3.4-3.6-5.7v-1.5c.2-1.9 1.1-3.7 2.6-5 1.7-1.4 4-2.1 6.1-1.7v4.4c-1-.3-2.1-.2-3 .4-.6.4-1.1 1-1.4 1.8-.2.5-.1 1.1-.1 1.6.2 1.6 1.8 3 3.5 2.9 1.1 0 2.2-.7 2.8-1.6.2-.3.4-.7.4-1.1.1-1.8.1-3.6.1-5.4V0z"/></defs>
+            <use href="#tt" fill="#25F4EE" transform="translate(-.8 -.6)"/>
+            <use href="#tt" fill="#FE2C55" transform="translate(.8 .6)"/>
+            <use href="#tt" fill="#111"/>
+          </svg>
+        </span>
+        <span class="card__line"></span>
+        <span><span class="card__title">TikTok</span><span class="card__sub">Подписывайтесь на нас</span></span>
+        <svg class="card__arrow" aria-hidden="true"><use href="#chev"/></svg>
+      </a>
+    </li>
+    <li>
+      <a class="card" id="gis" target="_blank" rel="noopener">
+        <span class="card__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#9B565C" d="M12 1.5a7.6 7.6 0 0 0-7.6 7.6c0 5.7 7.6 13.4 7.6 13.4s7.6-7.7 7.6-13.4A7.6 7.6 0 0 0 12 1.5z"/>
+            <circle cx="12" cy="9.2" r="2.9" fill="#F7E3E0"/>
+          </svg>
+        </span>
+        <span class="card__line"></span>
+        <span><span class="card__title">Мы на 2GIS</span><span class="card__sub">Как нас найти</span></span>
+        <svg class="card__arrow" aria-hidden="true"><use href="#chev"/></svg>
+      </a>
+    </li>
+  </ul>
+
+  <div class="divider divider--wide" aria-hidden="true"><svg><use href="#heart"/></svg></div>
+
+  <ul class="facts">
+    <li>
+      <svg viewBox="0 0 26 22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="3" width="22" height="16" rx="3"/><path d="M2 8.5h22M6 14.5h5"/></g></svg>
+      Принимаем Kaspi и Halyk
+    </li>
+    <li>
+      <svg viewBox="0 0 26 22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M2 5h14v11H2zM16 9h4.5l3.5 4v3h-8"/><circle cx="7" cy="17.5" r="2" fill="#F6E3E0"/><circle cx="19.5" cy="17.5" r="2" fill="#F6E3E0"/><path d="M0 9h4M0 12h3"/></g></svg>
+      Доставка по всему Казахстану
+    </li>
+  </ul>
+
+  <a class="handle" id="instagram" target="_blank" rel="noopener">@Sabira_style</a>
+  <svg class="heart-end" aria-hidden="true"><use href="#heart"/></svg>
+</main>
+
+<script>
+  /* ============================================================
+     СІЛТЕМЕЛЕР / ССЫЛКИ — тек осы жерді өзгертіңіз
+     ============================================================ */
+  const LINKS = {
+    whatsapp:  "77782282491",                              // нөмір, + белгісіз / номер без +
+    waMessage: "Здравствуйте! Пишу по поводу заказа 🌸",   // WhatsApp-та дайын хабарлама / готовое сообщение
+    tiktok:    "https://www.tiktok.com/@sabira_style",
+    gis:       "https://2gis.kz/aktau/search/ТЦ ARS",       // 2GIS-тегі нақты бутик сілтемесін қойыңыз / вставьте точную ссылку на бутик
+    instagram: "https://instagram.com/sabira_style"
+  };
+
+  const set = (id, url) => { document.getElementById(id).href = url; };
+  set("whatsapp", "https://wa.me/" + LINKS.whatsapp + "?text=" + encodeURIComponent(LINKS.waMessage));
+  set("tiktok", LINKS.tiktok);
+  set("gis", encodeURI(LINKS.gis));
+  set("address", encodeURI(LINKS.gis));
+  set("instagram", LINKS.instagram);
+</script>
+</body>
+</html>
