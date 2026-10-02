@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="ru">
+<html lang="kk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sabira_style — Style is you</title>
-<meta name="description" content="Sabira_style · ТЦ ARS, 29 мкр., Толкын 225/6 · WhatsApp, TikTok, 2GIS · Kaspi и Halyk · Доставка по всему Казахстану">
+<meta name="description" content="Sabira_style · ТЦ ARS, 2 этаж, бутик 215, Ақтау · WhatsApp, TikTok, 2GIS · Kaspi, Halyk · Бүкіл Қазақстан бойынша жеткізу · Доставка по всему Казахстану">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sabira_style · Style is you">
-<meta property="og:description" content="Заказы в WhatsApp · Доставка по всему Казахстану">
+<meta property="og:description" content="Тапсырыс WhatsApp арқылы · Заказы в WhatsApp">
 <meta property="og:url" content="https://aznagaliyevazhanna-lgtm.github.io/sabira-style/links/">
 <meta property="og:image" content="https://aznagaliyevazhanna-lgtm.github.io/sabira-style/images/og.jpg">
 <meta name="theme-color" content="#F6E3E0">
@@ -90,6 +90,8 @@
     text-decoration: none;
   }
   .address svg { width: 20px; height: 20px; flex: none; color: var(--rose); }
+  .address__text { display: flex; flex-direction: column; text-align: left; line-height: 1.2; }
+  .address__sub { font-size: .84em; color: var(--plum-soft); }
 
   /* ---------- кнопки ---------- */
   .links { list-style: none; width: 100%; margin-top: 26px; display: grid; gap: 16px; }
@@ -125,6 +127,22 @@
   .card__sub { display: block; margin-top: 3px; font-size: 17px; font-weight: 500; color: var(--plum-soft); line-height: 1.25; }
   .card__arrow { width: 20px; height: 20px; color: var(--plum-soft); transition: transform .25s ease; }
   .card:hover .card__arrow { transform: translateX(3px); }
+
+  /* ---------- тіл / язык ---------- */
+  .lang {
+    position: absolute; top: 14px; right: 14px; z-index: 2;
+    display: flex; padding: 3px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--card-line); box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  }
+  .lang button {
+    min-width: 44px; min-height: 34px; padding: 0 12px; border: 0; border-radius: 999px;
+    font: 500 12px/1 var(--sans); letter-spacing: .12em; color: var(--plum-soft);
+    background: transparent; cursor: pointer; -webkit-tap-highlight-color: transparent;
+    transition: background .25s ease, color .25s ease;
+  }
+  .lang button.on { background: var(--plum); color: #FBEFEC; }
+  .lang button:focus-visible { outline: 2px solid var(--rose); outline-offset: 2px; }
 
   /* ---------- низ ---------- */
   .divider--wide { max-width: 320px; margin-top: 30px; }
@@ -216,6 +234,11 @@
 <svg class="spark" style="top:78%;left:6%;animation-delay:2.1s" aria-hidden="true"><use href="#spark"/></svg>
 <svg class="spark" style="top:74%;right:6%;animation-delay:.7s" aria-hidden="true"><use href="#spark"/></svg>
 
+<div class="lang" role="group" aria-label="Тіл / Язык">
+  <button type="button" data-lang="kz">KZ</button>
+  <button type="button" data-lang="ru">RU</button>
+</div>
+
 <main class="page">
 
   <!-- логотип -->
@@ -248,7 +271,7 @@
 
   <a class="address" id="address" target="_blank" rel="noopener">
     <svg aria-hidden="true"><use href="#pin"/></svg>
-    <span>ТЦ ARS, 29 мкр., Толкын 225/6</span>
+    <span class="address__text"><span data-i18n="address">ТЦ ARS, 2-қабат, 215-бутик</span><span class="address__sub" data-i18n="street">29 ш.а., Толқын 225/6</span></span>
   </a>
 
   <ul class="links">
@@ -261,7 +284,7 @@
           </svg>
         </span>
         <span class="card__line"></span>
-        <span><span class="card__title">WhatsApp</span><span class="card__sub">Заказы и связь с менеджером</span></span>
+        <span><span class="card__title">WhatsApp</span><span class="card__sub" data-i18n="wa_sub">Тапсырыс және менеджермен байланыс</span></span>
         <svg class="card__arrow" aria-hidden="true"><use href="#chev"/></svg>
       </a>
     </li>
@@ -276,7 +299,7 @@
           </svg>
         </span>
         <span class="card__line"></span>
-        <span><span class="card__title">TikTok</span><span class="card__sub">Подписывайтесь на нас</span></span>
+        <span><span class="card__title">TikTok</span><span class="card__sub" data-i18n="tt_sub">Бізге жазылыңыз</span></span>
         <svg class="card__arrow" aria-hidden="true"><use href="#chev"/></svg>
       </a>
     </li>
@@ -289,7 +312,7 @@
           </svg>
         </span>
         <span class="card__line"></span>
-        <span><span class="card__title">Мы на 2GIS</span><span class="card__sub">Как нас найти</span></span>
+        <span><span class="card__title" data-i18n="gis_title">Біз 2GIS-те</span><span class="card__sub" data-i18n="gis_sub">Бізді қалай табасыз</span></span>
         <svg class="card__arrow" aria-hidden="true"><use href="#chev"/></svg>
       </a>
     </li>
@@ -300,11 +323,11 @@
   <ul class="facts">
     <li>
       <svg viewBox="0 0 26 22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="3" width="22" height="16" rx="3"/><path d="M2 8.5h22M6 14.5h5"/></g></svg>
-      Принимаем Kaspi и Halyk
+      <span data-i18n="pay">Kaspi және Halyk қабылдаймыз</span>
     </li>
     <li>
       <svg viewBox="0 0 26 22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M2 5h14v11H2zM16 9h4.5l3.5 4v3h-8"/><circle cx="7" cy="17.5" r="2" fill="#F6E3E0"/><circle cx="19.5" cy="17.5" r="2" fill="#F6E3E0"/><path d="M0 9h4M0 12h3"/></g></svg>
-      Доставка по всему Казахстану
+      <span data-i18n="delivery">Бүкіл Қазақстан бойынша жеткізу</span>
     </li>
   </ul>
 
@@ -318,14 +341,64 @@
      ============================================================ */
   const LINKS = {
     whatsapp:  "77782282491",                              // нөмір, + белгісіз / номер без +
-    waMessage: "Здравствуйте! Пишу по поводу заказа 🌸",   // WhatsApp-та дайын хабарлама / готовое сообщение
+    waMessage: {                                           // WhatsApp-та дайын хабарлама / готовое сообщение
+      kz: "Сәлеметсіз бе! Тапсырыс бойынша жазып отырмын 🌸",
+      ru: "Здравствуйте! Пишу по поводу заказа 🌸"
+    },
     tiktok:    "https://www.tiktok.com/@sabira.style.shop",
     gis:       "https://2gis.kz/aktau/geo/70000001101135467", // 2GIS-тегі бутик / бутик в 2GIS
     instagram: "https://instagram.com/sabira_style"
   };
 
+  /* ============================================================
+     МӘТІНДЕР / ТЕКСТЫ — қазақша және орысша / на казахском и русском
+     ============================================================ */
+  const T = {
+    kz: {
+      address:   "ТЦ ARS, 2-қабат, 215-бутик",
+      street:    "29 ш.а., Толқын 225/6",
+      wa_sub:    "Тапсырыс және менеджермен байланыс",
+      tt_sub:    "Бізге жазылыңыз",
+      gis_title: "Біз 2GIS-те",
+      gis_sub:   "Бізді қалай табасыз",
+      pay:       "Kaspi және Halyk қабылдаймыз",
+      delivery:  "Бүкіл Қазақстан бойынша жеткізу"
+    },
+    ru: {
+      address:   "ТЦ ARS, 2 этаж, бутик 215",
+      street:    "29 мкр., Толкын 225/6",
+      wa_sub:    "Заказы и связь с менеджером",
+      tt_sub:    "Подписывайтесь на нас",
+      gis_title: "Мы на 2GIS",
+      gis_sub:   "Как нас найти",
+      pay:       "Принимаем Kaspi и Halyk",
+      delivery:  "Доставка по всему Казахстану"
+    }
+  };
+
   const set = (id, url) => { document.getElementById(id).href = url; };
-  set("whatsapp", "https://wa.me/" + LINKS.whatsapp + "?text=" + encodeURIComponent(LINKS.waMessage));
+
+  // Тіл таңдауы негізгі сайтпен ортақ сақталады / выбор языка общий с основным сайтом
+  let lang = "kz";
+  try { lang = localStorage.getItem("ss-lang") || "kz"; } catch (e) {}
+  if (!T[lang]) lang = "kz";
+
+  function applyLang() {
+    document.documentElement.lang = lang === "kz" ? "kk" : "ru";
+    document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = T[lang][el.dataset.i18n]; });
+    document.querySelectorAll("[data-lang]").forEach(b => {
+      b.classList.toggle("on", b.dataset.lang === lang);
+      b.setAttribute("aria-pressed", b.dataset.lang === lang);
+    });
+    set("whatsapp", "https://wa.me/" + LINKS.whatsapp + "?text=" + encodeURIComponent(LINKS.waMessage[lang]));
+  }
+  document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click", () => {
+    lang = b.dataset.lang;
+    try { localStorage.setItem("ss-lang", lang); } catch (e) {}
+    applyLang();
+  }));
+  applyLang();
+
   set("tiktok", LINKS.tiktok);
   set("gis", encodeURI(LINKS.gis));
   set("address", encodeURI(LINKS.gis));
